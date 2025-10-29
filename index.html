@@ -5,17 +5,18 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Chrome Web Store</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
      <link rel="stylesheet" href="style.css">
      <link rel="shortcut icon" href="img/chromefav.png" type="image/x-icon">
 </head>
 
 <body>
-
+     <!-- Navbar -->
      <section class="navbar">
           <div class="nav-items">
                <div style="display: flex; align-items: center; padding-left: 26px;">
                     <img src="img/chromefav.png" alt="chromefav" height="32px" width="32px">
-                    <p class="para">chrome web store</p>
+                    <p class="nav-para">chrome web store</p>
                </div>
                <form class="search-pill" role="search" action="#" aria-label="Site search">
                     <label class="visually-hidden" for="q">Search</label>
@@ -27,8 +28,11 @@
                     <input id="q" class="search-input" type="search" name="q" placeholder="Search extensions and themes"
                          autocomplete="off" />
                </form>
+
+               <!-- Nav-Right -->
+
                <span class="right">
-                    <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M">
+                    <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="three-dots">
                          <path
                               d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
                          </path>
@@ -44,6 +48,8 @@
                </span>
           </div>
 
+          <!-- Discover -->
+
           <div class="discover">
                <button class="btn active">Discovers</button>
                <button class="btn">Extensions</button>
@@ -51,49 +57,107 @@
           </div>
      </section>
 
+     <!-- Swiper -->
+
+     <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                    <h1 class="hero-title">Welcome to the Chrome Web Store</h1>
+                    <p class="hero-sub">Supercharge your browser with extensions and themes for Chrome</p>
+
+                    <div class="icons-row" aria-hidden="true">
+                         <div class="app g" title="Google Translate"><img src="img/translate.png" alt="translate"></div>
+                         <div class="app ps" title="Photoshop"><img src="img/photoshop.png" alt="photoshop"></div>
+                         <div class="app brush" title="Cleaner"><img src="img/master.png" alt="master"></div>
+                         <div class="app g2" title="Grammarly"><img src="img/grammerly.png" alt="grammerly"></div>
+                         <div class="app pdf" title="PDF"><img src="img/adobe.png" alt="adobe"></div>
+                         <div class="app drive" title="Drive"><img src="img/drive.png" alt="drive"></div>
+                    </div>
+
+                    <div class="cta" style="margin-bottom:8px">
+                         <button class="cta-btn">See collection</button>
+                    </div>
+               </div>
+               <div class="swiper-slide two">
+                    <div class="con">
+                         <h1 class="hero-title white-text">Favorites of 2024</h1>
+                         <p class="hero-sub white-text" style="margin-left: 8px;">Discover the standout extensions that
+                              made our year</p>
+                    </div>
+                    <div class="cta" style="position: absolute; left: 54%; top: 50%;">
+                         <button class="cta-btn white">See collection</button>
+                    </div>
+
+               </div>
+               <div class="swiper-slide three">
+                    <h1 class="hero-title">Every day is Earth Day</h1>
+                    <p class="hero-sub">Plant trees, shop sustainably, and more</p>
+
+                    <div class="icons-row" aria-hidden="true">
+                         <div class="app g" title="Google Translate"><img src="img/er1.png" alt="er1"></div>
+                         <div class="app ps" title="Photoshop"><img src="img/er2.png" alt="er2"></div>
+                         <div class="app brush" title="Cleaner"><img src="img/er3.png" alt="er3"></div>
+                         <div class="app g2" title="Grammarly"><img src="img/er4.png" alt="er4"></div>
+                         <div class="app pdf" title="PDF"><img src="img/er5.png" alt="er5"></div>
+                         <div class="app drive" title="Drive"><img src="img/er6.png" alt="er6"></div>
+                    </div>
+
+                    <div class="cta" style="margin-bottom:8px">
+                         <button class="cta-btn">See collection</button>
+                    </div>
+
+               </div>
+               <div class="swiper-slide four">
+                    <img src="img/ps.png" alt="ps">
+                    <div class="con">
+                         <h1 class="hero-title">Adobe Photoshop</h1>
+                         <p class="hero-sub">Easily remove backgrounds, adjust colors and more.
+                              Plus, get 12 months free access to Photoshop web.</p>
+                         <div class="rating">
+                              <span>4.2</span>
+                              <svg focusable="false" width="16" height="16" viewBox="0 0 24 24" class="NMm5M">
+                                   <path
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                   </path>
+                              </svg>
+                              <span class="divider"></span>
+                              <span><strong>30K</strong> <br> Users</span>
+                         </div>
+                         <div class="cta">
+                              <button class="cta-btn">See details</button>
+                         </div>
+                    </div>
+               </div>
+               <div class="swiper-slide five">
+                    <h1 class="hero-title">The future of writing</h1>
+                    <p class="hero-sub">Elevate your writing and create engaging and high-quality content effortlessly
+                    </p>
+
+                    <div class="icons-row" aria-hidden="true">
+                         <div class="app g" title="Google Translate"><img src="img/fr1.png" alt="fr1"></div>
+                         <div class="app ps" title="Photoshop"><img src="img/fr2.png" alt="fr2"></div>
+                         <div class="app brush" title="Cleaner"><img src="img/fr3.png" alt="fr3"></div>
+                         <div class="app drive" title="Drive"><img src="img/fr4.png" alt="fr4"></div>
+                         <div class="app g2" title="Grammarly"><img src="img/grammerly.png" alt="grammerly"></div>
+                         <div class="app pdf" title="PDF"><img src="img/fr5.png" alt="fr5"></div>
+                    </div>
+
+                    <div class="cta" style="margin-bottom:8px">
+                         <button class="cta-btn">See collection</button>
+                    </div>
+
+
+               </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+     </div>
+
+     <!-- Hero -->
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script src="main.js"></script>
 </body>
 
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Chrome Web Store Clone</title>
-     <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-     <header class="navbar">
-          <div class="left-section">
-               <img src="img/chromefav.png" alt="Chrome Icon" class="logo">
-               <span class="title">chrome web store</span>
-               <nav class="nav-links">
-                    <a href="#" class="active">Discover</a>
-                    <a href="#">Extensions</a>
-                    <a href="#">Themes</a>
-               </nav>
-          </div>
-
-          <div class="center-section">
-               <div class="search-box">
-                    <i class="fa fa-search"></i>
-                    <input type="text" placeholder="Search extensions and themes">
-               </div>
-          </div>
-
-          <div class="right-section">
-               <i class="fa fa-ellipsis-v"></i>
-               <i class="fa fa-th"></i>
-               <div class="profile">R</div>
-          </div>
-     </header>
-
-     <!-- Font Awesome for icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</body>
-
-</html> -->

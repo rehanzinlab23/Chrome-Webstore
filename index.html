@@ -7,12 +7,14 @@
      <title>Chrome Web Store</title>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="extension.css">
      <link rel="shortcut icon" href="img/chromefav.png" type="image/x-icon">
 </head>
 
 <body>
 
      <!-- Navbar -->
+
      <main class="main">
           <div class="container">
                <section class="navbar">
@@ -42,6 +44,13 @@
                                              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
                                         </path>
                                    </svg>
+                                   <div class="context-menu-container">
+                                        <ul class="context-menu">
+                                             <li class="menu-item">My extensions &amp; themes</li>
+                                             <li class="menu-item">Developer Dashboard</li>
+                                             <li class="menu-item">Give feedback</li>
+                                        </ul>
+                                   </div>
                               </div>
 
                               <div class="icon-container">
@@ -75,143 +84,175 @@
 
                <!-- Swiper -->
 
-               <section class="swiper mySwiper">
-                    <div class="swiper-wrapper">
+               <div class="swiper" id="swiper" style="margin-top: 126px;">
+                    <div class="slides" style="margin-left: -1344px;">
                          <!-- 1 -->
-                         <div class="swiper-slide">
-                              <div class="img-wrapper">
-                                   <h1 class="hero-title">Welcome to the Chrome Web Store</h1>
-                                   <p class="hero-sub">Supercharge your browser with extensions and themes for Chrome
+                         <div class="slide" aria-label="Slide 1" inert>
+                              <section class="slideone">
+                                   <h2 class="slide-head">Welcome to the Chrome Web Store</h2>
+                                   <p class="slide-para">Supercharge your browser with extensions and themes for Chrome
                                    </p>
-
-                                   <div class="icons-row" aria-hidden="true">
-                                        <div class="app g" title="Google Translate"><img src="img/translate.png"
-                                                  alt="translate">
-                                        </div>
-                                        <div class="app ps" title="Photoshop"><img src="img/photoshop.png"
-                                                  alt="photoshop">
-                                        </div>
-                                        <div class="app brush" title="Cleaner"><img src="img/master.png" alt="master">
-                                        </div>
-                                        <div class="app g2" title="Grammarly"><img src="img/grammerly.png"
-                                                  alt="grammerly">
-                                        </div>
-                                        <div class="app pdf" title="PDF"><img src="img/adobe.png" alt="adobe"></div>
-                                        <div class="app drive" title="Drive"><img src="img/drive.png" alt="drive"></div>
+                                   <div class="slide-apps">
+                                        <a href="#" class="slide-link">
+                                             <img src="img/translate.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/photoshop.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/master.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/grammerly.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/adobe.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/drive.png" alt="translate" class="slide-app-img">
+                                        </a>
                                    </div>
-
-                                   <div class="cta" style="margin-bottom:8px">
+                                   <a href="#" class="liak"></a>
+                                   <div class="cta" style="margin-bottom:8px; margin-top: 12px;">
                                         <button class="cta-btn">See collection</button>
                                    </div>
-                              </div>
+                              </section>
                          </div>
-
                          <!-- 2 -->
-
-                         <div class="swiper-slide">
-                              <div class="img-wrapper two">
-                                   <div class="con">
-                                        <h1 class="hero-title white-text">Favorites of 2024</h1>
-                                        <p class="hero-sub white-text" style="margin-left: 8px;">Discover the standout
-                                             extensions
-                                             that
-                                             made our year</p>
+                         <div class="slide" aria-label="Slide 2" inert>
+                              <section class="slidetwo">
+                                   <div class="slidetwo-content">
+                                        <h2 class="slidetwo-heading">Favorites of 2024</h2>
+                                        <p class="slidetwo-para">Discover the standout extensions that made our year
+                                        </p>
                                    </div>
-                                   <div class="cta" style="display: block;">
-                                        <button class="cta-btn white">See collection</button>
+                                   <a href="#" class="liak"></a>
+                                   <div class="cta" style="margin-bottom:8px; display: inline;">
+                                        <button id="eclispetwo" class="cta-btn"
+                                             style=" border-color: #fff; color: #fff;">See
+                                             collection</button>
                                    </div>
-                              </div>
+                              </section>
                          </div>
-
                          <!-- 3 -->
-                         <div class="swiper-slide">
-                              <div class="img-wrapper three">
-                                   <h1 class="hero-title">Every day is Earth Day</h1>
-                                   <p class="hero-sub">Plant trees, shop sustainably, and more</p>
-
-                                   <div class="icons-row" aria-hidden="true">
-                                        <div class="app g" title="Google Translate"><img src="img/er1.png" alt="er1">
-                                        </div>
-                                        <div class="app ps" title="Photoshop"><img src="img/er2.png" alt="er2"></div>
-                                        <div class="app brush" title="Cleaner"><img src="img/er3.png" alt="er3"></div>
-                                        <div class="app g2" title="Grammarly"><img src="img/er4.png" alt="er4"></div>
-                                        <div class="app pdf" title="PDF"><img src="img/er5.png" alt="er5"></div>
-                                        <div class="app drive" title="Drive"><img src="img/er6.png" alt="er6"></div>
+                         <div class="slide" aria-label="Slide 3" inert>
+                              <section class="slidethree">
+                                   <h2 class="slide-head">Every day is Earth day</h2>
+                                   <p class="slide-para">Plant trees, shop sustainably, and more</p>
+                                   <div class="slide-apps">
+                                        <a href="#" class="slide-link">
+                                             <img src="img/er1.png" alt="er1" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/er2.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/er3.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/er4.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/er5.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/er6.png" alt="translate" class="slide-app-img">
+                                        </a>
                                    </div>
-
-                                   <div class="cta" style="margin-bottom:8px">
+                                   <a href="#" class="liak"></a>
+                                   <div class="cta" style="margin-bottom:8px; margin-top: 12px;">
                                         <button class="cta-btn">See collection</button>
                                    </div>
-                              </div>
+                              </section>
                          </div>
-
                          <!-- 4 -->
-
-                         <div class="swiper-slide">
-                              <div class="img-wrapper four">
-                                   <img src="img/ps.png" alt="ps">
-                                   <div class="con">
-                                        <h1 class="hero-title">Adobe Photoshop</h1>
-                                        <p class="hero-sub">Easily remove backgrounds, adjust colors and more.
-                                             Plus, get 12 months free access to Photoshop web.</p>
-                                        <div class="rating">
-                                             <span>4.2</span>
-                                             <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
-                                                  class="NMm5M">
-                                                  <path
-                                                       d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
-                                                  </path>
-                                             </svg>
-                                             <span class="divider"></span>
-                                             <span><strong>30K</strong> <br> Users</span>
+                         <div class="slide" aria-label="Slide 4" inert>
+                              <section class="slidefour" style="background-color: rgb(205, 237, 249);">
+                                   <a href="#" class="liak"></a>
+                                   <img src="img/ps.png" alt="ps" class="slidefour-img">
+                                   <div class="slidefour-content">
+                                        <h2 class="slidefour-head">Adobe Photoshop</h2>
+                                        <p class="slidefour-para">Easily remove backgrounds, adjust colors and
+                                             more.Plus, get 12 months free access to Photoshop web.</p>
+                                        <div class="path-box">
+                                             <div class="svg">
+                                                  <span class="svg-star-flex svg-star-text"
+                                                       style="--star-icon-size: 16px; --info-icon-size: 14px;">
+                                                       <span class="rating-content" role="img"
+                                                            aria-label="Average rating 4.3 out of 5 stars.">
+                                                            <span class="rating"><b>4.3</b></span>
+                                                            <svg focusable="false" width="16" height="16"
+                                                                 viewBox="0 0 24 24" class=" NMm5M">
+                                                                 <path
+                                                                      d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                                 </path>
+                                                            </svg>
+                                                       </span>
+                                                  </span>
+                                             </div>
+                                             <div class="svg">
+                                                  <span class="fourtyk"><b>40K</b></span>
+                                                  <span class="users">Users</span>
+                                             </div>
                                         </div>
-                                        <div class="cta">
+                                        <div class="cta" style="margin-bottom:8px; display: inline;">
                                              <button class="cta-btn">See details</button>
                                         </div>
                                    </div>
-                              </div>
+                              </section>
                          </div>
-
                          <!-- 5 -->
-                         <div class="swiper-slide">
-                              <div class="img-wrapper five">
-                                   <h1 class="hero-title">The future of writing</h1>
-                                   <p class="hero-sub">Elevate your writing and create engaging and high-quality content
-                                        effortlessly
-                                   </p>
-
-                                   <div class="icons-row" aria-hidden="true">
-                                        <div class="app g" title="Google Translate"><img src="img/fr1.png" alt="fr1">
-                                        </div>
-                                        <div class="app ps" title="Photoshop"><img src="img/fr2.png" alt="fr2"></div>
-                                        <div class="app brush" title="Cleaner"><img src="img/fr3.png" alt="fr3"></div>
-                                        <div class="app drive" title="Drive"><img src="img/fr4.png" alt="fr4"></div>
-                                        <div class="app g2" title="Grammarly"><img src="img/grammerly.png"
-                                                  alt="grammerly">
-                                        </div>
-                                        <div class="app pdf" title="PDF"><img src="img/fr5.png" alt="fr5"></div>
+                         <div class="slide" aria-label="Slide 5" inert>
+                              <section class="slidefive">
+                                   <h2 class="slide-head">The future of writing</h2>
+                                   <p class="slide-para">Elevate your writing and create engaging and high-quality
+                                        content effortlessly</p>
+                                   <div class="slide-apps">
+                                        <a href="#" class="slide-link">
+                                             <img src="img/fr1.png" alt="er1" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/fr2.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/fr3.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/fr4.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/grammerly.png" alt="translate" class="slide-app-img">
+                                        </a>
+                                        <a href="#" class="slide-link">
+                                             <img src="img/fr5.png" alt="translate" class="slide-app-img">
+                                        </a>
                                    </div>
-
-                                   <div class="cta" style="margin-bottom:8px">
+                                   <a href="#" class="liak"></a>
+                                   <div class="cta" style="margin-bottom:8px; margin-top: 12px;">
                                         <button class="cta-btn">See collection</button>
                                    </div>
-                              </div>
+                              </section>
                          </div>
-
                     </div>
-                    <div class="swiper-buttons">
-                         <button class="autobtn" id="prevBtn">
-                              <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M hhikbc">
-                                   <path d="M16.41 5.41L15 4l-8 8 8 8 1.41-1.41L9.83 12"></path>
+                    <div class="slideshow-navigation" id="playPauseBtn">
+                         <button class="nav-button prev-button" aria-label="Previous Slide">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round">
+                                   <polyline points="15 18 9 12 15 6"></polyline>
                               </svg>
                          </button>
-                         <!-- <div class="swiper-pagination"></div> -->
-                         <button class="autobtn" id="nextBtn">
-                              <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M hhikbc">
-                                   <path d="M7.59 18.59L9 20l8-8-8-8-1.41 1.41L14.17 12"></path>
+                         <div class="page-indicator">
+                              1 / 5
+                         </div>
+                         <button class="nav-button next-button" aria-label="Next Slide">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                   stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                   stroke-linejoin="round">
+                                   <polyline points="9 18 15 12 9 6"></polyline>
                               </svg>
                          </button>
-                         <button class="autobtn" id="playPauseBtn">
+                         <button class="nav-button play-button" aria-label="Start Autoplay">
                               <svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"
                                    focusable="false" class=" NMm5M">
                                    <g>
@@ -225,7 +266,7 @@
                               </svg>
                          </button>
                     </div>
-               </section>
+               </div>
 
                <!-- Categories -->
 
@@ -946,7 +987,8 @@
                     <a href="#" class="editor-link"></a>
                     <div class="cta"
                          style="z-index: 1; display: block; margin-bottom: 6px; margin-right: 284px; margin-top: 10px;">
-                         <button class="cta-btn" style=" color: #fff; border-color: #fff;">See collection</button>
+                         <button id="eclispe" class="cta-btn" style=" color: #fff; border-color: #fff;">See
+                              collection</button>
                     </div>
                </section>
 
@@ -1693,6 +1735,7 @@
 
           </div>
      </main>
+
      <!-- Footer -->
 
      <footer class="footer">
@@ -1717,6 +1760,7 @@
 
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script src="main.js"></script>
+     <script src="extension.js"></script>
 </body>
 
 </html>

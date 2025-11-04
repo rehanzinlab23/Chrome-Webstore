@@ -24,11 +24,10 @@
                          </div>
                          <form class="search-pill" role="search" action="#" aria-label="Site search">
                               <label class="visually-hidden" for="q">Search</label>
-                              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none"
-                                   stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                   stroke-linejoin="round">
-                                   <circle cx="11" cy="11" r="6" />
-                                   <path d="M21 21l-4.35-4.35" />
+                              <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M">
+                                   <path
+                                        d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5A6.5 6.5 0 1 0 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z">
+                                   </path>
                               </svg>
                               <input id="q" class="search-input" type="search" name="q"
                                    placeholder="Search extensions and themes" autocomplete="off" />
@@ -43,7 +42,16 @@
                                              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
                                         </path>
                                    </svg>
+
+                                   <div class="context-menu-container">
+                                        <ul class="context-menu">
+                                             <li class="menu-item">My extensions &amp; themes</li>
+                                             <li class="menu-item">Developer Dashboard</li>
+                                             <li class="menu-item">Give feedback</li>
+                                        </ul>
+                                   </div>
                               </div>
+
 
                               <div class="icon-container">
                                    <svg width="24" height="24" class="gb_F" focusable="false" viewBox="0 0 24 24"
@@ -73,6 +81,121 @@
                </section>
 
                <!-- Hero -->
+
+               <div class="flex">
+                    <!-- Left -->
+                    <section class="left">
+                         <nav class="sec">
+                              <ul class="left-ul">
+                                   <li>
+                                        <h2 class="left-heading">Productivity</h2>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Communication</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Developer Tools</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Education</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Tools</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Workflow &amp; Planning</span>
+                                   </li>
+                                   <li class="seperator"></li>
+                                   <li>
+                                        <h2 class="left-heading">Lifestyle</h2>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Art &amp; Design</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Entertainment</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Games</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Household</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Just for fun</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">News &amp; Weather</span>
+                                   </li>
+                                   <li class="li blue">
+                                        <span class="li-content">Shopping</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Social Networking</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Travel</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Well-beign</span>
+                                   </li>
+                                   <li class="seperator"></li>
+                                   <li>
+                                        <h2 class="left-heading">Make Chrome Yours</h2>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Accessibility</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Functionality &amp; UI</span>
+                                   </li>
+                                   <li class="li">
+                                        <span class="li-content">Privacy &amp; Security</span>
+                                   </li>
+                              </ul>
+                         </nav>
+                    </section>
+                    <!-- Right -->
+                    <main class="exts">
+                         <div class="grid">
+                              <div class="grid-heading">
+                                   <h1 class="grid-heading-content">Shopping</h1>
+                                   <div class="filter">
+                                        <div class="filter-container">
+                                             <label for="filter-dropdown" class="filter-label" id="filter-label">Filter
+                                                  by</label>
+
+                                             <div class="filter-button" id="filterButton">
+                                                  <span class="selected-filter" id="selectedText">All</span>
+                                                  <span class="dropdown-arrow" id="dropdownArrow">&#9660;</span>
+                                             </div>
+                                             <div class="filter-menu" id="filterMenu">
+                                                  <div class="menu-item selected" data-value="All">All</div>
+                                                  <div class="menu-item" data-value="Featured">Featured</div>
+                                                  <div class="menu-item" data-value="Established publishers">Established
+                                                       publishers</div>
+                                             </div>
+                                        </div>
+                                        <div class="filter-container">
+                                             <label for="filter-dropdown" class="filter-label" id="filter-label">Sort
+                                                  by</label>
+
+                                             <div class="filter-button" id="filterButton">
+                                                  <span class="selected-filter" id="selectedText">Most relevant</span>
+                                                  <span class="dropdown-arrow" id="dropdownArrow">&#9660;</span>
+                                             </div>
+                                             <div class="filter-menu" id="filterMenu">
+                                                  <div class="menu-item selected" data-value="All">Most relevant</div>
+                                                  <div class="menu-item" data-value="Established publishers">Highest
+                                                       rated
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </main>
+               </div>
           </div>
      </main>
 

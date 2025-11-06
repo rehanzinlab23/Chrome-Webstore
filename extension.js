@@ -67,3 +67,22 @@ loadMore.addEventListener('click', () => {
   grid.style.display = 'grid';
   sessionStorage.setItem('flexVisible', 'true');
 });
+
+// On Top
+
+const backToTopBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) { // 300px scroll hone par show hoga
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+});
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

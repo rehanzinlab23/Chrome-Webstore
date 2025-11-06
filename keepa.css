@@ -1,0 +1,105 @@
+@font-face {
+     font-family: 'Google Sans Text';
+     font-style: normal;
+     font-weight: 200;
+     src: url(img/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCI.woff2);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Google Sans Text';
+}
+
+.block {
+     display: block;
+     flex-grow: 1;
+     width: 100%;
+}
+
+/* Keepa */
+
+.keepa-main-header {
+     padding-top: 66px;
+}
+
+.keepa-main-content-box {
+     font-family: 'Google Sans Text';
+     font-size: 1rem;
+     font-weight: 400;
+     letter-spacing: 0;
+     line-height: 1.5rem;
+     box-sizing: border-box;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto 24px;
+     max-width: 1072px;
+     position: relative;
+}
+
+.keepa-main-content {
+     max-width: 1072px;
+     width: 100%;
+}
+
+/* First line */
+
+.first-line {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 16px;
+}
+
+.first-line-content {
+     align-items: center;
+     color: inherit;
+     display: flex;
+     max-width: 800px;
+}
+
+.first-line-img {
+     border-radius: 8px;
+     height: 60px;
+     margin-right: 16px;
+     width: 60px;
+}
+
+.first-line-heading {
+     font-family: 'Google Sans Text';
+     font-size: 2rem;
+     letter-spacing: 0;
+     font-variant-ligatures: none;
+     font-weight: 700;
+     line-height: 41px;
+     margin: initial;
+     color: #000;
+}
+
+.keepa-btn {
+     display: inline-block;
+     min-width: 192px;
+     padding-top: 6px;
+     text-align: right;
+}
+
+.keepa-btn-chrome {
+     font-family: 'Google Sans Text';
+     font-size: 12px;
+     font-weight: 500;
+     display: inline-flex;
+     position: relative;
+     align-items: center;
+     box-sizing: border-box;
+     border: none;
+     outline: none;
+     background-color: #0b57d0;
+     color: #fff;
+     padding: 16px;
+     border-radius: 30px;
+     cursor: pointer;
+}
+
+.keepa-btn-chrome:hover {
+     box-shadow: rgba(0, green, blue, alpha)
+}

@@ -374,3 +374,38 @@ body {
 #grid {
      display: none;
 }
+
+/* On top */
+
+#backToTop {
+     bottom: 28px;
+     position: fixed;
+     right: 36px;
+     padding: 10px 20px;
+     font-size: 14px;
+     border: 1px solid #ccc;
+     border-radius: 30px;
+     background-color: transparent;
+     color: #0b57d0;
+     cursor: pointer;
+     opacity: 0;
+     pointer-events: none;
+     transition: opacity 0.3s ease;
+     text-align: center;
+}
+
+#backToTop.show {
+     opacity: 1;
+     pointer-events: auto;
+}
+
+#backToTop:hover {
+     background-color: rgba(2, 6, 23, 0.03);
+     border-color: #444746;
+}
+
+.btn-flex {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+}

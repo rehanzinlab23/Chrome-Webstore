@@ -48,7 +48,7 @@
 .first-line {
      display: flex;
      justify-content: space-between;
-     margin-bottom: 16px;
+     margin-bottom: 24px;
 }
 
 .first-line-content {
@@ -86,7 +86,7 @@
 .keepa-btn-chrome {
      font-family: 'Google Sans Text';
      font-size: 12px;
-     font-weight: 500;
+     font-weight: 600;
      display: inline-flex;
      position: relative;
      align-items: center;
@@ -95,11 +95,206 @@
      outline: none;
      background-color: #0b57d0;
      color: #fff;
-     padding: 16px;
+     padding: 12px 20px;
      border-radius: 30px;
      cursor: pointer;
+     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .keepa-btn-chrome:hover {
-     box-shadow: rgba(0, green, blue, alpha)
+     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Second Line */
+
+.second-line {
+     display: flex;
+     align-items: center;
+     margin-bottom: 12px;
+}
+
+.keepa-com {
+     display: flex;
+}
+
+.keepa-align {
+     height: 28px;
+     margin-right: 2px;
+}
+
+.verify-svg {
+     fill: #0b57d0;
+     border-radius: 10px;
+     padding: 2px;
+     box-sizing: border-box;
+     cursor: pointer;
+}
+
+.verify-svg:hover {
+     background-color: rgba(11, 87, 208, 0.08);
+     border-radius: 50%;
+}
+
+.keepa-a {
+     font-family: 'Google Sans Text';
+     color: #0b57d0;
+     cursor: pointer;
+     font-variant-ligatures: none;
+     font-size: 16px;
+     font-weight: 400;
+     margin-right: 16px;
+     max-width: 400px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     text-decoration: none;
+}
+
+.feature-svg {
+     fill: #146c2e;
+     border-radius: 10px;
+     padding: 2px;
+     box-sizing: border-box;
+     cursor: pointer;
+}
+
+.feature-svg:hover {
+     background-color: rgba(244, 248, 242, 0.8);
+     border-radius: 50%;
+}
+
+.ext-rate {
+     font-family: 'Google Sans Text';
+     font-size: 1rem;
+     font-weight: 400;
+     letter-spacing: 0;
+     line-height: 1.5rem;
+}
+
+.rate {
+     display: flex;
+     align-items: center;
+     color: #1f1f1f;
+     height: 18px;
+}
+
+.rating-span {
+     display: flex;
+     align-items: center;
+}
+
+.rating-digits {
+     font-weight: 500;
+     margin-right: 2px;
+}
+
+.rating-link-span {
+     margin-left: 3px;
+}
+
+.rating-link {
+     color: #0b57d0;
+     text-decoration: none;
+}
+
+.rating-link-para {
+     display: inline;
+}
+
+.inline {
+     display: inline;
+}
+
+.share-btn {
+     display: flex;
+     gap: 6px;
+     font-size: 1rem;
+     font-weight: 400;
+     margin-inline-start: 4px;
+     cursor: pointer;
+     outline: none;
+     border: none;
+     background: transparent;
+     padding: 8px 10px;
+     border-radius: 20px;
+     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.share-btn:hover {
+     background-color: #e8ebff;
+}
+
+.share-svg-span {
+     display: inline-flex;
+     line-height: 0;
+     position: relative;
+     color: #0b57d0;
+}
+
+.share-svg-span svg {
+     display: inline-flex;
+     position: relative;
+     direction: inherit;
+     color: inherit;
+     font-size: 18px;
+     inline-size: 18px;
+     block-size: 18px;
+}
+
+.share-span {
+     color: #0b57d0;
+     text-align: center;
+}
+
+/* Third Line */
+
+.third-line {
+     align-items: center;
+     display: flex;
+     font-family: 'Google Sans Text';
+     font-size: .875rem;
+     font-weight: 400;
+     letter-spacing: 0;
+     line-height: 1.25rem;
+}
+
+.third-line-link,
+.third-line-second {
+     background-color: #f0f4f9;
+     color: #1f1f1f;
+     cursor: pointer;
+     text-decoration: none;
+}
+
+.third-line-link:hover,
+.third-line-second:hover {
+     background-color: rgba(0, 0, 0, 0.08);
+}
+
+.third-line-link::before,
+.third-line-second::before {
+     border-radius: inherit;
+     content: "";
+     display: block;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+}
+
+.third-line-a {
+     font-family: 'Google Sans Text';
+     font-size: .875rem;
+     font-weight: 400;
+     letter-spacing: 0;
+     line-height: 1.25rem;
+     border-radius: 8px;
+     margin-right: 8px;
+     padding: 8px 12px;
+     position: relative;
+}
+
+.third-line-a:last-child {
+     margin-right: 12px;
 }

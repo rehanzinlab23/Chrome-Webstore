@@ -69,6 +69,7 @@ body {
 }
 
 .nav-para {
+     font-family: 'Google Sans Text';
      font-size: 1rem;
      font-weight: 400;
      letter-spacing: 0;
@@ -129,8 +130,9 @@ body {
 }
 
 .search-input::placeholder {
-     color: #000;
+     color: #444746;
      font-weight: 500;
+     font-family: 'Google Sans Text';
 }
 
 /* Nav-Right */
@@ -157,14 +159,14 @@ body {
 }
 
 .btn {
-     font-family: "Google Sans", Roboto, Arial, sans-serif;
+     font-family: 'Google Sans Text';
      border: none;
      outline: none;
      background: transparent;
      cursor: pointer;
      color: #1f1f1f;
      font-size: 14px;
-     font-weight: 600;
+     font-weight: 500;
      line-height: 1.5rem;
 }
 

@@ -26,36 +26,44 @@ window.addEventListener('scroll', () => {
 
 // Filter Box
 
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('filterButton');
-    const menu = document.getElementById('filterMenu');
-    const selectedText = document.getElementById('selectedText');
-     const filterLabel = document.getElementById('filter-label');
-    const menuItems = menu.querySelectorAll('.menu-item');
+const dropdowns = document.querySelectorAll('.dropdown');
 
-    button.addEventListener('click', function(event) {
-        event.stopPropagation();
-        button.classList.toggle('open');
-        menu.classList.toggle('open');
-        filterLabel.classList.toggle('open');
-    });
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const currentSelected = menu.querySelector('.menu-item.selected');
-            if (currentSelected) {
-                currentSelected.classList.remove('selected');
-            }
-            item.classList.add('selected');
-            selectedText.textContent = item.textContent;
-            button.classList.remove('open');
-            menu.classList.remove('open');
-        });
+dropdowns.forEach(drop => {
+  const selected = drop.querySelector('.selected');
+
+  selected.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    dropdowns.forEach(other => {
+      if (other !== drop) other.classList.remove('click');
     });
 
-    document.addEventListener('click', function(event) {
-        if (!button.contains(event.target) && !menu.contains(event.target)) {
-            button.classList.remove('open');
-            menu.classList.remove('open');
-        }
+    drop.classList.toggle('click');
+  });
+
+  drop.querySelectorAll('.menu div').forEach(option => {
+    option.addEventListener('click', (e) => {
+      e.stopPropagation();
+      selected.textContent = option.textContent;
+      drop.classList.remove('click');
     });
+  });
+});
+
+document.addEventListener('click', () => {
+  dropdowns.forEach(drop => drop.classList.remove('click'));
+});
+
+// Load More
+
+const loadMore = document.getElementById('loadMore');
+const grid = document.getElementById('grid');
+
+if (sessionStorage.getItem('flexVisible') === 'true') {
+  grid.style.display = 'grid';
+}
+
+loadMore.addEventListener('click', () => {
+  grid.style.display = 'grid';
+  sessionStorage.setItem('flexVisible', 'true');
 });

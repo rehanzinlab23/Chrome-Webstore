@@ -37,6 +37,7 @@ body {
 .sec {
      padding-left: 26px;
      width: 230px;
+     /* margin-top: 16px; */
 }
 
 .left-ul {
@@ -48,11 +49,13 @@ body {
 
 
 .left-heading {
-     display: inline-block;
      font-family: "Google Sans", Roboto, Arial, sans-serif;
-     font-size: 1rem !important;
+     font-size: 1rem;
+     font-weight: 400;
      letter-spacing: 0;
-     font-weight: 500 !important;
+     line-height: 1.5rem;
+     display: inline-block;
+     font-weight: 500;
      line-height: 2.5rem;
      margin-block: 0;
      padding: 0 24px;
@@ -152,116 +155,222 @@ body {
      margin: 0;
 }
 
-/* .filter {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-} */
+/* Filter */
 
-.filter-container {
-     width: 280px;
+.dropdown {
      position: relative;
+     display: inline-block;
+     min-width: 212px;
+     user-select: none;
 }
 
-.filter-wrapper {
-     position: relative;
-}
-
-.filter-label {
+.dropdown label {
      position: absolute;
-     top: -10px;
-     left: 15px;
-     background-color: white;
-     padding: 0 5px;
-     font-size: 14px;
-     color: #666;
-     z-index: 1;
-}
-
-.filter-button {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px 15px;
-     border: 1px solid #ccc;
-     border-radius: 25px;
-     font-size: 18px;
+     top: -7px;
+     left: 14px;
+     background-color: #fff;
+     padding: 0 6px;
+     font-size: 12px;
+     color: #5f6368;
      font-weight: 500;
-     color: #333;
-     cursor: pointer;
-     background-color: white;
-     position: relative;
-     z-index: 0;
-     transition: border-color 0.2s ease;
+     pointer-events: none;
+     transition: color 0.2s ease;
+     z-index: 2;
 }
 
-.filter-button:hover {
+.dropdown .selected {
+     border: 1px solid #dadce0;
+     border-radius: 22px;
+     padding: 12px 38px 10px 14px;
+     background-color: #fff;
+     color: #202124;
+     font-size: 1rem;
+     font-weight: 400;
+     cursor: pointer;
+     position: relative;
+     transition: all 0.25s ease;
+}
+
+.dropdown .selected:hover {
      border: 1px solid #000;
 }
 
-.dropdown-arrow {
-     font-size: 10px;
-     line-height: 1;
-     color: #666;
-     transform: rotate(0deg);
-     transition: transform 0.2s ease, color 0.2s ease;
-}
-
-
-.filter-button.open {
-     border-color: #007bff;
-}
-
-.filter-label.open {
-     color: #007bff;
-}
-
-.filter-button.open .dropdown-arrow {
-     transform: rotate(180deg);
-     color: #007bff;
-}
-
-.filter-menu {
+.dropdown .arrow {
      position: absolute;
-     display: none;
-     top: calc(100% + 5px);
+     right: 16px;
+     top: 50%;
+     transform: translateY(-50%) rotate(0deg);
+     width: 0;
+     height: 0;
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-top: 6px solid #5f6368;
+     transition: transform 0.25s ease, border-top-color 0.25s ease;
+}
+
+.dropdown .menu {
+     position: absolute;
+     top: 100%;
      left: 0;
      width: 100%;
-     border: 1px solid #ccc;
-     border-radius: 8px;
-     background-color: white;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-     z-index: 10;
+     background-color: #f0f4f9;
+     border-radius: 4px;
+     margin-top: 6px;
+     overflow: hidden;
+     display: none;
+     flex-direction: column;
+     animation: fadeIn 0.2s ease;
+     z-index: 5;
+     padding: 6px;
 }
 
-.filter-menu.open {
-     display: block;
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+          transform: translateY(-5px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
 }
 
-.menu-item {
-     padding: 10px 15px;
-     font-size: 16px;
+.dropdown .menu div {
+     padding: 10px 16px;
+     font-size: 14px;
+     color: #202124;
      cursor: pointer;
-     transition: background-color 0.15s;
+     transition: background-color 0.15s ease;
 }
 
-.menu-item:first-child {
-     border-top-left-radius: 8px;
-     border-top-right-radius: 8px;
+.dropdown .menu div:hover {
+     background-color: rgba(2, 6, 23, 0.06);
 }
 
-.menu-item:last-child {
-     border-bottom-left-radius: 8px;
-     border-bottom-right-radius: 8px;
+.dropdown.click .selected {
+     border-color: #1a73e8;
 }
 
-.menu-item:hover {
-     background-color: #f0f0f0;
+.dropdown.click label {
+     color: #1a73e8;
 }
 
-.menu-item.selected {
-     background-color: #eaeaea;
+.dropdown.click .arrow {
+     transform: translateY(-50%) rotate(180deg);
+     border-top-color: #1a73e8;
+}
+
+.dropdown.click .menu {
+     display: flex;
+}
+
+.all {
+     background-color: rgba(2, 6, 23, 0.09);
+}
+
+.all:hover {
+     background-color: rgba(2, 6, 23, 0.03);
+}
+
+/* Keepa */
+
+.keepa {
+     background-color: #f0f4f9;
+     border-radius: 20px;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     max-width: 252px;
+     position: relative;
+}
+
+.keepa::before {
+     border-radius: inherit;
+     content: "";
+     display: block;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+}
+
+.keepa:hover::before {
+     background-color: #444746;
+     opacity: .08;
+}
+
+.keepa-link {
+     border-radius: 20px;
+     height: 100%;
+     outline: none;
+     position: absolute;
+     width: 100%;
+}
+
+.keepa-content {
+     display: flex;
+     flex-direction: column;
+     padding: 16px;
+}
+
+.keepa-img {
+     aspect-ratio: 1.5714285714;
+     border-radius: 12px;
+     width: 100%;
+}
+
+.keepa-para {
+     -webkit-box-orient: vertical;
+     display: -webkit-box;
+     line-clamp: 1;
+     overflow: hidden;
+     font-family: "Google Sans", Roboto, Arial, sans-serif;
+     font-size: 1rem;
+     font-weight: 400;
+     letter-spacing: 0;
+     line-height: 1.5rem;
+     font-variant-ligatures: none;
      font-weight: 500;
-     color: #333;
+     margin: 12px 0 0;
+     min-height: 1.5rem;
+}
+
+.keepa-lines {
+     -webkit-box-orient: vertical;
+     display: -webkit-box;
+     line-clamp: 2;
+     overflow: hidden;
+     font-family: "Google Sans", Roboto, Arial, sans-serif;
+     font-size: .875rem;
+     font-weight: 400;
+     letter-spacing: 0;
+     line-height: 1.25rem;
+     font-variant-ligatures: none;
+     margin: 8px 0 0;
+     min-height: 2.5rem;
+}
+
+/* Load More */
+
+.load-more {
+     background-color: transparent;
+     color: #1a73e8;
+     border: none;
+     padding: 10px 24px;
+     border-radius: 999px;
+     font-size: 14px;
+     font-weight: 500;
+     cursor: pointer;
+     transition: background 0.2s, box-shadow 0.2s;
+     margin-top: 32px;
+}
+
+.load-more:hover {
+     background-color: #f5f6ff;
+}
+
+#grid {
+     display: none;
 }

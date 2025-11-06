@@ -74,7 +74,8 @@
                     <!-- Discover -->
 
                     <div class="discover">
-                         <button class="btn">Discovers</button>
+                         <button class="btn"><a href="index.html"
+                                   style="text-decoration: none; color: #000;">Discovers</a></button>
                          <button class="btn active">Extensions</button>
                          <button class="btn">Themes</button>
                     </div>
@@ -157,43 +158,1884 @@
                     </section>
                     <!-- Right -->
                     <main class="exts">
+                         <!-- 1 -->
                          <div class="grid">
                               <div class="grid-heading">
                                    <h1 class="grid-heading-content">Shopping</h1>
-                                   <div class="filter">
-                                        <div class="filter-container">
-                                             <label for="filter-dropdown" class="filter-label" id="filter-label">Filter
-                                                  by</label>
-
-                                             <div class="filter-button" id="filterButton">
-                                                  <span class="selected-filter" id="selectedText">All</span>
-                                                  <span class="dropdown-arrow" id="dropdownArrow">&#9660;</span>
-                                             </div>
-                                             <div class="filter-menu" id="filterMenu">
-                                                  <div class="menu-item selected" data-value="All">All</div>
-                                                  <div class="menu-item" data-value="Featured">Featured</div>
-                                                  <div class="menu-item" data-value="Established publishers">Established
-                                                       publishers</div>
-                                             </div>
+                                   <!-- FILTER -->
+                                   <div class="dropdown" id="filterDropdown">
+                                        <label class="label">Filter by</label>
+                                        <div class="selected">All</div>
+                                        <div class="arrow"></div>
+                                        <div class="menu">
+                                             <div class="all">All</div>
+                                             <div>Featured</div>
+                                             <div>Established publishers</div>
                                         </div>
-                                        <div class="filter-container">
-                                             <label for="filter-dropdown" class="filter-label" id="filter-label">Sort
-                                                  by</label>
+                                   </div>
 
-                                             <div class="filter-button" id="filterButton">
-                                                  <span class="selected-filter" id="selectedText">Most relevant</span>
-                                                  <span class="dropdown-arrow" id="dropdownArrow">&#9660;</span>
-                                             </div>
-                                             <div class="filter-menu" id="filterMenu">
-                                                  <div class="menu-item selected" data-value="All">Most relevant</div>
-                                                  <div class="menu-item" data-value="Established publishers">Highest
-                                                       rated
-                                                  </div>
-                                             </div>
+                                   <!-- SORT -->
+                                   <div class="dropdown" id="sortDropdown">
+                                        <label>Sort by</label>
+                                        <div class="selected">Most relevant</div>
+                                        <div class="arrow"></div>
+                                        <div class="menu">
+                                             <div class="all">Most relevant</div>
+                                             <div>Newest</div>
+                                             <div>Top rated</div>
                                         </div>
                                    </div>
                               </div>
+                              <!-- Extentions -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/keepa.jpg" alt="keepa" class="keepa-img">
+                                        <p class="keepa-para">Keepa™ - Amazon Price...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.7</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Adds price history charts and the option to be alerted...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/camel.png" alt="camel" class="keepa-img">
+                                        <p class="keepa-para">The Camelizer</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.3</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Easily view historical pricing camelcamelcamel.com.
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/wnateed.png" alt="wnateed" class="keepa-img">
+                                        <p class="keepa-para">wanteed</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Wanteeed permet d'appliquer automatiquement
+                                             meilleures...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/karma.jpg" alt="karma" class="keepa-img">
+                                        <p class="keepa-para">Karma | Online shopping</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Shop Smarter: Compare Prices, Get Coupons, Price &
+                                             Earn...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alitools.png" alt="alitools" class="keepa-img">
+                                        <p class="keepa-para">Alitools Shopping Assistant</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Auto-find & apply AliExpress™ promo codes, history,
+                                             selle...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 2 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/augmen.png" alt="augmen" class="keepa-img">
+                                        <p class="keepa-para">Augmented Steam</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.4</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Augments your Steam Experience</p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/pie.png" alt="pie" class="keepa-img">
+                                        <p class="keepa-para">Pie Shopping: AI Cash</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Save money effortlessly with Pie Shopping: activate Cash
+                                             Back,...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/joko.jpg" alt="joko" class="keepa-img">
+                                        <p class="keepa-para">Joko: Cash back</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.0</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Earn money effortlessly with the Joko browser extension!
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/my.png" alt="mmy" class="keepa-img">
+                                        <p class="keepa-para">Add to MyRegistry.com...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Add items from all your favorite stores to one universal
+                                             gift list.
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/aliprice.png" alt="aliprice" class="keepa-img">
+                                        <p class="keepa-para">AliPrice Search by Image...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">AliPrice Search by image allows you to easily find the
+                                             source...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 3 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/frugal.png" alt="frugal" class="keepa-img">
+                                        <p class="keepa-para">BeFrugal: Automatic...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Get the highest Cash Back and automatically best
+                                             coupon...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alibaba.png" alt="camel" class="keepa-img">
+                                        <p class="keepa-para">1688 Purchasing Assistant...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Official 1688 Plugin for screenshots, product searches...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/id.png" alt="id" class="keepa-img">
+                                        <p class="keepa-para">ID.me Shop: Discover...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.2</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Let the ID.me Shop browser extension find Military,
+                                             Nurse,...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/tenere.png" alt="tenere" class="keepa-img">
+                                        <p class="keepa-para">Tenere</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Automatically apply coupon codes when you shop trees
+                                             o...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alissave.jpg" alt="alissave" class="keepa-img">
+                                        <p class="keepa-para">AliSave Plus - Download...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Download Aliexpress Product Images & Videos. The most...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 4 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alipriceass.png" alt="alipriceass" class="keepa-img">
+                                        <p class="keepa-para">AliPrice Price Tracker</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">AliPrice.com - Your price tracker for e-commerce websites
+                                             .</p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alisearch.png" alt="alisearch" class="keepa-img">
+                                        <p class="keepa-para">AliPrice Search image fo...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">AliPrice Search by image allows you to easily find the
+                                             source...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/rabata.png" alt="rabata" class="keepa-img">
+                                        <p class="keepa-para">Rabatta</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.2</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Save money with discount codes from Rabatta.</p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/fund.jpg" alt="fund" class="keepa-img">
+                                        <p class="keepa-para">easyfundraising Donation...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.7</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Never miss a donation for your charity good cause
+                                             again with...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/picodi.png" alt="picodi" class="keepa-img">
+                                        <p class="keepa-para">Picodi.com Cashback</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Install Picodi in your browser and start saving money
+                                             when...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 5 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/share.png" alt="share" class="keepa-img">
+                                        <p class="keepa-para">Share-A-Cart</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Share-A-Cart allows you share the contents of your
+                                             cart with...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/aibuy.png" alt="aibuy" class="keepa-img">
+                                        <p class="keepa-para">1688 AIBUY: Official...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Enhance your international sourcing on 1688 with
+                                             offici...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/codes.png" alt="codes" class="keepa-img">
+                                        <p class="keepa-para">SimplyCodes: Verified...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.7</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Verified promo codes for 400,000+ stores. Real...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/molly.jpg" alt="molly" class="keepa-img">
+                                        <p class="keepa-para">Molly</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Molly automatically finds better prices, coupon and
+                                             warns...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/euro.png" alt="euro" class="keepa-img">
+                                        <p class="keepa-para">EuroSaver - Amazon...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Simplifies Amazon product price comparison between
+                                             europea...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 6 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/wild.png" alt="wild" class="keepa-img">
+                                        <p class="keepa-para">Widilo Cashback Reminder</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Get cashback in one click on all your purchases when
+                                             shop...</p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/checkmate.png" alt="checkmate" class="keepa-img">
+                                        <p class="keepa-para">Checkmate - While Yo...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Automatically apply coupons, track your orders, and
+                                             unlock...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/property.png" alt="property" class="keepa-img">
+                                        <p class="keepa-para">Property Tracker</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">3.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Tracks changes to property prices on the RightMove
+                                             website.</p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/samrty.jpg" alt="samrty" class="keepa-img">
+                                        <p class="keepa-para">Smarty</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Add coupon codes & get cash back when shopping online!
+                                             By...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/mino.jpg" alt="mino" class="keepa-img">
+                                        <p class="keepa-para">Mino: Automatic Coupons...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Mino automatically applies the best codes at
+                                             checkout...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 7 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/allkey.png" alt="allkey" class="keepa-img">
+                                        <p class="keepa-para">Allkeyshop - Compare Gam...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Shows you the best deals and coupons available
+                                             while...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/pricetracker.png" alt="mino" class="keepa-img">
+                                        <p class="keepa-para">Price Tracker 2.0 - Price...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.0</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Price Tracker 2.0 - Price History Chart, Auto Buy
+                                             Products, Set...
+                                        </p>
+                                   </div>
+                              </div>
                          </div>
+                         <!-- 2 -->
+                         <div class="grid" style="margin-top: 16px;" id="grid">
+                              <!-- Extentions -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/keepa.jpg" alt="keepa" class="keepa-img">
+                                        <p class="keepa-para">Keepa™ - Amazon Price...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.7</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Adds price history charts and the option to be alerted...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/camel.png" alt="camel" class="keepa-img">
+                                        <p class="keepa-para">The Camelizer</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.3</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Easily view historical pricing camelcamelcamel.com.
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/wnateed.png" alt="wnateed" class="keepa-img">
+                                        <p class="keepa-para">wanteed</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Wanteeed permet d'appliquer automatiquement
+                                             meilleures...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/karma.jpg" alt="karma" class="keepa-img">
+                                        <p class="keepa-para">Karma | Online shopping</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Shop Smarter: Compare Prices, Get Coupons, Price &
+                                             Earn...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alitools.png" alt="alitools" class="keepa-img">
+                                        <p class="keepa-para">Alitools Shopping Assistant</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Auto-find & apply AliExpress™ promo codes, history,
+                                             selle...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 2 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/augmen.png" alt="augmen" class="keepa-img">
+                                        <p class="keepa-para">Augmented Steam</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.4</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Augments your Steam Experience</p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/pie.png" alt="pie" class="keepa-img">
+                                        <p class="keepa-para">Pie Shopping: AI Cash</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Save money effortlessly with Pie Shopping: activate Cash
+                                             Back,...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/joko.jpg" alt="joko" class="keepa-img">
+                                        <p class="keepa-para">Joko: Cash back</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.0</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Earn money effortlessly with the Joko browser extension!
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/my.png" alt="mmy" class="keepa-img">
+                                        <p class="keepa-para">Add to MyRegistry.com...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Add items from all your favorite stores to one universal
+                                             gift list.
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/aliprice.png" alt="aliprice" class="keepa-img">
+                                        <p class="keepa-para">AliPrice Search by Image...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">AliPrice Search by image allows you to easily find the
+                                             source...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 3 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/frugal.png" alt="frugal" class="keepa-img">
+                                        <p class="keepa-para">BeFrugal: Automatic...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Get the highest Cash Back and automatically best
+                                             coupon...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alibaba.png" alt="camel" class="keepa-img">
+                                        <p class="keepa-para">1688 Purchasing Assistant...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Official 1688 Plugin for screenshots, product searches...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/id.png" alt="id" class="keepa-img">
+                                        <p class="keepa-para">ID.me Shop: Discover...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.2</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Let the ID.me Shop browser extension find Military,
+                                             Nurse,...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/tenere.png" alt="tenere" class="keepa-img">
+                                        <p class="keepa-para">Tenere</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Automatically apply coupon codes when you shop trees
+                                             o...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alissave.jpg" alt="alissave" class="keepa-img">
+                                        <p class="keepa-para">AliSave Plus - Download...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Download Aliexpress Product Images & Videos. The most...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 4 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alipriceass.png" alt="alipriceass" class="keepa-img">
+                                        <p class="keepa-para">AliPrice Price Tracker</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.6</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">AliPrice.com - Your price tracker for e-commerce websites
+                                             .</p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/alisearch.png" alt="alisearch" class="keepa-img">
+                                        <p class="keepa-para">AliPrice Search image fo...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">AliPrice Search by image allows you to easily find the
+                                             source...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/rabata.png" alt="rabata" class="keepa-img">
+                                        <p class="keepa-para">Rabatta</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.2</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Save money with discount codes from Rabatta.</p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/fund.jpg" alt="fund" class="keepa-img">
+                                        <p class="keepa-para">easyfundraising Donation...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.7</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Never miss a donation for your charity good cause
+                                             again with...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/picodi.png" alt="picodi" class="keepa-img">
+                                        <p class="keepa-para">Picodi.com Cashback</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Install Picodi in your browser and start saving money
+                                             when...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 5 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/share.png" alt="share" class="keepa-img">
+                                        <p class="keepa-para">Share-A-Cart</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Share-A-Cart allows you share the contents of your
+                                             cart with...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/aibuy.png" alt="aibuy" class="keepa-img">
+                                        <p class="keepa-para">1688 AIBUY: Official...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.8</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Enhance your international sourcing on 1688 with
+                                             offici...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/codes.png" alt="codes" class="keepa-img">
+                                        <p class="keepa-para">SimplyCodes: Verified...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.7</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Verified promo codes for 400,000+ stores. Real...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/molly.jpg" alt="molly" class="keepa-img">
+                                        <p class="keepa-para">Molly</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Molly automatically finds better prices, coupon and
+                                             warns...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/euro.png" alt="euro" class="keepa-img">
+                                        <p class="keepa-para">EuroSaver - Amazon...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Simplifies Amazon product price comparison between
+                                             europea...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 6 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/wild.png" alt="wild" class="keepa-img">
+                                        <p class="keepa-para">Widilo Cashback Reminder</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Get cashback in one click on all your purchases when
+                                             shop...</p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/checkmate.png" alt="checkmate" class="keepa-img">
+                                        <p class="keepa-para">Checkmate - While Yo...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.5</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Automatically apply coupons, track your orders, and
+                                             unlock...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 3 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/property.png" alt="property" class="keepa-img">
+                                        <p class="keepa-para">Property Tracker</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">3.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Tracks changes to property prices on the RightMove
+                                             website.</p>
+                                   </div>
+                              </div>
+                              <!-- 4 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/samrty.jpg" alt="samrty" class="keepa-img">
+                                        <p class="keepa-para">Smarty</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.1</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Add coupon codes & get cash back when shopping online!
+                                             By...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 5 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/mino.jpg" alt="mino" class="keepa-img">
+                                        <p class="keepa-para">Mino: Automatic Coupons...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Mino automatically applies the best codes at
+                                             checkout...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- Extentions 7 -->
+                              <!-- 1 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/allkey.png" alt="allkey" class="keepa-img">
+                                        <p class="keepa-para">Allkeyshop - Compare Gam...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.9</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Shows you the best deals and coupons available
+                                             while...
+                                        </p>
+                                   </div>
+                              </div>
+                              <!-- 2 -->
+                              <div class="keepa">
+                                   <a href="#" class="keepa-link"></a>
+                                   <div class="keepa-content">
+                                        <img src="img/pricetracker.png" alt="mino" class="keepa-img">
+                                        <p class="keepa-para">Price Tracker 2.0 - Price...</p>
+                                        <span class="card-rating-info">
+                                             <span class="card-rating">4.0</span>
+                                             <span class="star-icon">
+                                                  <svg focusable="false" width="18" height="18" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z">
+                                                       </path>
+                                                  </svg></span>
+                                             <span class="info-icon">
+                                                  <svg focusable="false" width="16" height="16" viewBox="0 0 24 24"
+                                                       class=" NMm5M">
+                                                       <path
+                                                            d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                                       </path>
+                                                  </svg>
+                                             </span>
+                                        </span>
+                                        <p class="keepa-lines">Price Tracker 2.0 - Price History Chart, Auto Buy
+                                             Products, Set...
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- Load More -->
+                         <button class="load-more" id="loadMore"><strong>Load more</strong></button>
                     </main>
                </div>
           </div>

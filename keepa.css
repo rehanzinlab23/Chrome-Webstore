@@ -298,3 +298,220 @@
 .third-line-a:last-child {
      margin-right: 12px;
 }
+
+/* Swiper */
+
+.keepa-swiper {
+     align-items: center;
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     margin: 44px auto;
+     max-width: 1344px;
+}
+
+.keepa-swiper-div {
+     align-items: center;
+     display: flex;
+     gap: 4px;
+     justify-content: center;
+     margin-bottom: 24px;
+     width: 100%;
+}
+
+.arrow-left {
+     display: flex;
+     justify-content: center;
+}
+
+.arrow-left-btn {
+     color: #444746;
+     align-items: center;
+     appearance: none;
+     background: transparent;
+     border: none;
+     box-sizing: border-box;
+     cursor: pointer;
+     display: inline-flex;
+     fill: currentColor;
+     justify-content: center;
+     line-height: inherit;
+     outline: none;
+     position: relative;
+     text-rendering: inherit;
+     user-select: none;
+}
+
+.arrow-left-btn::before {
+     border-radius: inherit;
+     border: 1px solid transparent;
+     box-sizing: border-box;
+     content: "";
+     inset: 0;
+     pointer-events: none;
+     position: absolute;
+     z-index: 1;
+}
+
+.arrow-left-btn:hover::before {
+     background-color: rgba(0, 0, 0, 0.06);
+     border-radius: 50%;
+}
+
+.keepa-swiper-container {
+     flex: 1;
+     max-width: 1256px;
+     overflow: hidden;
+}
+
+.second-swiper {
+     display: flex;
+     gap: 3%;
+     width: 100%;
+     position: relative;
+}
+
+.main-img-box {
+     align-items: center;
+     display: flex;
+     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .3));
+     flex-shrink: 0;
+     width: 48.5%;
+}
+
+.main-img-box-align {
+     box-sizing: border-box;
+     cursor: pointer;
+     max-width: 609px;
+     outline: none;
+     position: relative;
+     width: 100%;
+     padding: 8px;
+}
+
+.main-img {
+     aspect-ratio: 1.6;
+     background-color: white;
+     border-radius: 6px;
+     box-sizing: border-box;
+     object-fit: cover;
+     width: 100%;
+}
+
+.relative {
+     position: relative;
+}
+
+.play-btn {
+     align-items: center;
+     background-color: rgba(0, 0, 0, .45);
+     border-radius: 50%;
+     display: flex;
+     height: 56px;
+     justify-content: center;
+     left: calc(50% - 28px);
+     position: absolute;
+     top: calc(50% - 28px);
+     width: 56px;
+}
+
+.IrAx3c {
+     color: white;
+}
+
+.thumbnail {
+     display: flex;
+     gap: 3%;
+     justify-content: center;
+}
+
+.thumbnail-div {
+     box-sizing: border-box;
+     cursor: pointer;
+     flex: 1;
+     max-width: 96px;
+     min-width: 14%;
+     outline: none;
+     position: relative;
+}
+
+.thumbnail-active {
+     border-radius: 6px;
+     outline: 3px solid #0b57d0;
+}
+
+.thumbnail-img {
+     aspect-ratio: 1.6;
+     border-radius: 6px;
+     display: block;
+     width: 100%;
+}
+
+.thumbnail-span {
+     background-color: white;
+     border-radius: 6px;
+     inset: 0;
+     opacity: 0;
+     position: absolute;
+}
+
+.thumbnail-span:hover {
+     opacity: .24;
+}
+
+/* OverView */
+
+.overview {
+     border-bottom: 1px solid #c4c7c5;
+     box-sizing: border-box;
+     margin: 0 auto;
+     max-width: 1072px;
+}
+
+.overview-head {
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     font-weight: 500;
+}
+
+.overview-heading {
+     font-family: 'Google Sans Text';
+     font-size: 1.75rem;
+     letter-spacing: 0;
+     line-height: 2.25rem;
+     font-weight: 700;
+}
+
+.overview-content {
+     font-family: 'Google Sans Text';
+     font-size: 1rem;
+     font-weight: 400;
+     letter-spacing: 0;
+     line-height: 1.5rem;
+     padding-bottom: 24px;
+}
+
+.overview-paragraphs.overview-para {
+     height: 286px;
+     mask: linear-gradient(rgb(255, 255, 255) 85%, transparent);
+     overflow: hidden;
+}
+
+.overview-paragraphs {
+     font-variant-ligatures: none;
+     margin-bottom: .75rem;
+     white-space: pre-wrap;
+}
+
+.overview-see {
+     color: #444746;
+     text-decoration: underline;
+     cursor: pointer;
+     padding: .75rem 0;
+     width: fit-content;
+}
+
+.overview-hide {
+     display: none;
+}

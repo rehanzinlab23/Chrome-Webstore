@@ -96,28 +96,44 @@ updateActiveThumbnail();
 
 // OverView
 
-const overviewSeeMore = document.getElementById('overviewSeeMore');
-
+function overview() {
+  const overviewSeeMore = document.getElementById('overviewSeeMore');
+const overviewSeeLess = document.getElementById('overviewSeeLess');
 const overviewParagraphs = document.querySelector('.overview-paragraphs');
 
-const overviewSeeLess = document.getElementById('overviewSeeLess');
-
-const para = document.querySelector('.overview-para');
-
-// Overview More
-
 overviewSeeMore.addEventListener('click', () => {
-overviewParagraphs.style.height = 'auto';
-para.style.height = 'auto';
-overviewSeeLess.style.display = 'flex';
-overviewSeeMore.style.display = 'none';
+  overviewParagraphs.classList.add('expanded');
+  overviewSeeMore.style.display = 'none';
+  overviewSeeLess.style.display = 'flex';
 });
 
-// OverView Less
-
 overviewSeeLess.addEventListener('click', () => {
-  overviewParagraphs.style.height = '286px';
-para.style.height = '286px';
-overviewSeeLess.style.display = 'none';
-overviewSeeMore.style.display = 'flex';
-})
+  overviewParagraphs.classList.remove('expanded');
+  overviewSeeLess.style.display = 'none';
+  overviewSeeMore.style.display = 'flex';
+});
+}
+overview();
+
+// Details
+
+function detail() {
+  const detailClick = document.querySelectorAll('.detail-click');
+
+  detailClick.forEach((click) => {
+    const flexIcon = click.querySelector('.detail-flex');
+    const noneIcon = click.querySelector('.detail-none');
+
+    click.addEventListener('toggle', () => {
+      if (click.open) {
+        flexIcon.style.display = 'none';
+        noneIcon.style.display = 'flex';
+      } else {
+        flexIcon.style.display = 'flex';
+        noneIcon.style.display = 'none';
+      }
+    });
+  });
+}
+
+detail();

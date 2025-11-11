@@ -92,6 +92,19 @@ thumbnails.forEach((thumb, i) => {
   });
 });
 
+// const MainImgTwo = document.getElementById('main-img-two');
+
+// const BodyMainImg = document.getElementById('body-main-img-two');
+
+// const BodyMainImgDiv = document.getElementById('body-main-img-div');
+
+// MainImgTwo.addEventListener('click', () => {
+//   BodyMainImgDiv.style.zIndex = 2;
+//   BodyMainImg.style.display = 'block';
+//   overlay.style.opacity = 0.3;
+//   overlay.style.zIndex = 1;
+// });
+
 updateActiveThumbnail();
 
 // OverView

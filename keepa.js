@@ -201,3 +201,18 @@ function detail() {
 }
 
 detail();
+
+// Search
+
+const searchIcon = document.getElementById('searchIcon');
+
+const searchPill = document.getElementById('searchPill');
+
+const navLogo = document.getElementById('navLogo');
+
+
+searchIcon.addEventListener('click', () => {
+    searchPill.style.display = 'flex';
+    searchIcon.style.display = 'none';
+    navLogo.style.display = 'none';
+});

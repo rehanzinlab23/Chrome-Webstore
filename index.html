@@ -20,11 +20,19 @@
           <div class="container">
                <section class="navbar">
                     <div class="nav-items">
-                         <div style="display: flex; align-items: center; padding-left: 26px;">
+                         <div class="nav-logo" id="navLogo">
                               <img src="img/chromefav.png" alt="chromefav" height="32px" width="32px">
                               <p class="nav-para">chrome web store</p>
+
+                              <div id="searchIcon" class="search-icon">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M">
+                                        <path
+                                             d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5A6.5 6.5 0 1 0 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z">
+                                        </path>
+                                   </svg>
+                              </div>
                          </div>
-                         <form class="search-pill" role="search" action="#" aria-label="Site search">
+                         <form id="searchPill" class="search-pill" role="search" action="#" aria-label="Site search">
                               <label class="visually-hidden" for="q">Search</label>
                               <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M">
                                    <path
@@ -44,7 +52,6 @@
                                              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
                                         </path>
                                    </svg>
-
                                    <div class="context-menu-container">
                                         <ul class="context-menu">
                                              <li class="menu-item">My extensions &amp; themes</li>
@@ -114,7 +121,6 @@
                                              <img src="img/drive.png" alt="translate" class="slide-app-img">
                                         </a>
                                    </div>
-                                   <a href="#" class="liak"></a>
                                    <div class="cta" style="margin-bottom:8px; margin-top: 12px;">
                                         <button class="cta-btn">See collection</button>
                                    </div>
@@ -812,8 +818,7 @@
                     <h2 class="editor-head" style="color:#4e6276;">Editors' Picks for you</h2>
                     <p class="editor-para" style="color:#202124;">Handpicked by Chrome Editors</p>
                     <a href="#" class="editor-link"></a>
-                    <div class="cta"
-                         style="z-index: 1; display: block; margin-bottom: 6px; margin-right: 284px; margin-top: 10px;">
+                    <div class="cta" style="z-index: 1; display: block; margin-bottom: 6px; margin-top: 10px;">
                          <button class="cta-btn" style=" color: #4e6276; border-color: #4e6276;">See collection</button>
                     </div>
                </section>
@@ -989,8 +994,7 @@
                     <h2 class="editor-head" style="color:#fff;">Eclipse your screen</h2>
                     <p class="editor-para" style="color:#fff;">Dim the lights with our dark mode selections</p>
                     <a href="#" class="editor-link"></a>
-                    <div class="cta"
-                         style="z-index: 1; display: block; margin-bottom: 6px; margin-right: 284px; margin-top: 10px;">
+                    <div class="cta" style="z-index: 1; display: block; margin-bottom: 6px; margin-top: 10px;">
                          <button id="eclispe" class="cta-btn" style=" color: #fff; border-color: #fff;">See
                               collection</button>
                     </div>
@@ -1241,8 +1245,7 @@
                     <h2 class="editor-head" style="color:#000;">Just for fun</h2>
                     <p class="editor-para" style="color:#000;">Bring some joy to your browser</p>
                     <a href="#" class="editor-link"></a>
-                    <div class="cta"
-                         style="z-index: 1; display: block; margin-bottom: 6px; margin-right: 284px; margin-top: 10px;">
+                    <div class="cta" style="z-index: 1; display: block; margin-bottom: 6px; margin-top: 10px;">
                          <button class="cta-btn" style=" color: #000; border-color: #000;">See collection</button>
                     </div>
                </section>
@@ -1574,8 +1577,7 @@
                          AI-powered
                          productivity extensions</p>
                     <a href="#" class="editor-link"></a>
-                    <div class="cta"
-                         style="z-index: 1; display: block; margin-bottom: 6px; margin-right: 284px; margin-top: 10px;">
+                    <div class="cta" style="z-index: 1; display: block; margin-bottom: 6px; margin-top: 10px;">
                          <button class="cta-btn" style=" color: #000; border-color: #000;">See collection</button>
                     </div>
                </section>
@@ -1736,7 +1738,6 @@
                          </div>
                     </div>
                </section>
-
           </div>
      </main>
 

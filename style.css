@@ -27,7 +27,8 @@ body {
      display: flex;
      flex-direction: column;
      margin: 0 auto;
-     width: 1344px;
+     max-width: 1344px;
+     width: 100%;
 }
 
 .container {
@@ -55,6 +56,12 @@ body {
      svg {
           cursor: pointer;
      }
+}
+
+.nav-logo {
+     display: flex;
+     align-items: center;
+     padding-left: 26px;
 }
 
 .navbar.scrolled {
@@ -133,6 +140,12 @@ body {
      color: #444746;
      font-weight: 500;
      font-family: 'Google Sans Text';
+}
+
+.search-icon {
+     display: none;
+     cursor: pointer;
+     margin-left: 140px;
 }
 
 /* Nav-Right */
@@ -327,6 +340,7 @@ body {
      gap: 16px;
      justify-content: center;
      margin-top: 16px;
+     z-index: 999;
 }
 
 .slide-link {
@@ -576,7 +590,7 @@ body {
 .cta {
      display: flex;
      justify-content: center;
-     z-index: 1;
+     z-index: 999;
 }
 
 .cta-btn {
@@ -1014,8 +1028,11 @@ body {
 }
 
 .img-radius {
-     height: 48px;
-     width: 48px;
+     height: 54px;
+     width: 54px;
+     padding: 6px;
+     background: #fff;
+     border-radius: 12px;
 }
 
 .img-radius-content {
@@ -1428,8 +1445,130 @@ body {
 
 /* Responsive */
 
-@media (max-width: 468px) {
-     .swiper {
+@media (max-width: 400px) {
+
+     .swiper,
+     .right,
+     .link,
+     .browser-para,
+     .search-pill {
           display: none;
+     }
+
+     .search-icon {
+          display: inline-flex;
+     }
+
+     #searchPill {
+          min-width: 370px;
+          max-width: 520px;
+     }
+
+     .nav-items {
+          justify-content: normal;
+     }
+
+     .box {
+          width: 350px;
+     }
+
+     .boxes {
+          flex-direction: column;
+          gap: 12px;
+          margin-left: 32px;
+     }
+
+     .extention-card {
+          width: 332px;
+          max-width: none;
+     }
+
+     .chrome-link {
+          width: 346px;
+     }
+
+     .like-head,
+     .chart-head,
+     .chrome-head,
+     .chrome-para {
+          margin-left: 34px;
+     }
+
+     .extention,
+     .chrome-boxes {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+          gap: 16px;
+          margin-left: 32px;
+     }
+
+     .apps {
+          flex-direction: column;
+     }
+
+     .chart-heading {
+          text-align: center;
+     }
+
+     .chart-content {
+          width: 364px;
+          margin-left: 22px;
+     }
+
+     .chart-bx {
+          flex-direction: column;
+     }
+
+     .chart-img-bx {
+          background-color: transparent;
+     }
+
+     .img-radius-content {
+          align-items: center;
+     }
+
+     .link-charts {
+          display: flex;
+          justify-content: center;
+          margin-right: 0;
+     }
+
+     .editor,
+     .eclispe,
+     .fun,
+     .smart {
+          padding: 16px;
+     }
+
+     .editor-head {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+     }
+
+     .editor-para {
+          font-size: 0.85rem;
+          margin: 8px 0 6px;
+     }
+
+     .cta-btn {
+          padding: 5px 12px;
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+
+     .footer {
+          display: block;
+     }
+
+     .footer-ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+          margin-top: 24px;
+     }
+
+     .footer-li:not(:last-child)::after {
+          content: "";
+          margin: 0 8px;
      }
 }

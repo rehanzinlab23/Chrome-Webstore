@@ -550,6 +550,10 @@ body {
      .flex {
           display: block;
      }
+
+     .footer-ul {
+          margin-top: 24px;
+     }
 }
 
 @media (max-width: 400px) {
@@ -568,8 +572,8 @@ body {
      }
 
      .hamburger {
-          top: 19%;
-          left: 2%;
+          top: 16%;
+          left: 4%;
      }
 
      .hamburger,
@@ -626,6 +630,7 @@ body {
 
      .exts {
           min-width: 0 !important;
+          margin-left: 32px;
      }
 
      #backToTop {
@@ -656,5 +661,9 @@ body {
 
      .flex {
           display: block;
+     }
+
+     .footer-ul {
+          margin-top: 12px;
      }
 }

@@ -73,7 +73,7 @@ loadMore.addEventListener('click', () => {
 const backToTopBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) { // 300px scroll hone par show hoga
+  if (window.scrollY > 300) { 
     backToTopBtn.classList.add("show");
   } else {
     backToTopBtn.classList.remove("show");
@@ -85,4 +85,46 @@ backToTopBtn.addEventListener("click", () => {
     top: 0,
     behavior: "smooth"
   });
+});
+
+// Search
+
+const searchIcon = document.getElementById('searchIcon');
+
+const searchPill = document.getElementById('searchPill');
+
+const navLogo = document.getElementById('navLogo');
+
+
+searchIcon.addEventListener('click', () => {
+    searchPill.style.display = 'flex';
+    searchIcon.style.display = 'none';
+    navLogo.style.display = 'none';
+});
+
+// Hamburger 
+
+const hamburger = document.getElementById('hamburger');
+const leftBox = document.getElementById('left');
+const sec = document.getElementById('sec');
+const cancelBtn = document.getElementById('cancelBtn');
+
+const overlay = document.createElement('div');
+overlay.classList.add('overlay');
+document.body.appendChild(overlay);
+
+hamburger.addEventListener('click', () => {
+     leftBox.classList.toggle('left-active');
+     overlay.classList.toggle('show');
+     sec.style.display = 'flex';
+});
+
+overlay.addEventListener('click', () => {
+     leftBox.classList.remove('left-active');
+     overlay.classList.remove('show');
+});
+
+cancelBtn.addEventListener('click', () => {
+leftBox.classList.remove('left-active');
+     overlay.classList.remove('show');
 });

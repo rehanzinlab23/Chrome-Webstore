@@ -32,7 +32,7 @@ const nextBtn = document.querySelectorAll('.arrow-left-btn')[1];
 const thumbnails = document.querySelectorAll('.thumbnail-div');
 
 let index = 0;
-const totalImages = 7;
+const totalImages = 10;
 const visibleImages = 2;
 const movePercent = 52;
 
@@ -50,20 +50,21 @@ function updateActiveThumbnail() {
 
 nextBtn.addEventListener('click', () => {
   index++;
-  if (index > totalImages - visibleImages) {
-    updateSwiper();
+if (index > totalImages - visibleImages) {
+  updateSwiper();
+  setTimeout(() => {
+    swiper.style.transition = 'none';
+    index = 0;
+    swiper.style.left = `-${index * movePercent}%`;
+    updateActiveThumbnail();
     setTimeout(() => {
-      swiper.style.transition = 'none';
-      index = 0;
-      swiper.style.left = `-${index * movePercent}%`;
-      updateActiveThumbnail();
-      setTimeout(() => {
-        swiper.style.transition = 'left 0.5s ease';
-      }, 20);
-    }, 500);
-  } else {
-    updateSwiper();
-  }
+      swiper.style.transition = 'left 0.5s ease';
+    }, 20);
+  }, 500);
+} else {
+  updateSwiper();
+}
+
 });
 
 prevBtn.addEventListener('click', () => {

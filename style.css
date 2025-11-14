@@ -1445,9 +1445,176 @@ body {
 
 /* Responsive */
 
+@media (max-width: 1024px) {
+
+     .nav-items {
+          justify-content: space-between;
+          gap: 18px;
+     }
+
+     .box {
+          width: 300px;
+     }
+
+     .extention-card {
+          width: 332px;
+          max-width: none;
+     }
+
+     .chrome-link {
+          width: 346px;
+     }
+
+     .cate-heading,
+     .chart-head {
+          text-align: center;
+     }
+
+     .boxes,
+     .apps {
+          display: grid;
+     }
+
+     .apps {
+          margin-left: 0px;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px;
+     }
+
+     .extention,
+     .chrome-boxes,
+     .boxes {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 16px;
+
+     }
+
+     .chart-heading {
+          text-align: center;
+     }
+
+     .chart-none {
+          display: none;
+     }
+
+     .chart-bx {
+          flex-direction: column;
+     }
+
+     .chart-img-bx {
+          background-color: transparent;
+     }
+
+     .img-radius-content {
+          align-items: center;
+     }
+
+     .link-charts {
+          display: flex;
+          justify-content: center;
+          margin-right: 0;
+     }
+
+     .editor-para {
+          margin: 8px 0 6px;
+     }
+
+     .cta-btn {
+          font-weight: 500;
+     }
+}
+
 @media (max-width: 768px) {
-     .main {
-          width: 1344px;
+
+     .nav-items {
+          justify-content: normal;
+          gap: 18px;
+     }
+
+     .swiper {
+          display: none;
+     }
+
+     .box {
+          width: 350px;
+     }
+
+     .extention-card {
+          width: 332px;
+          max-width: none;
+     }
+
+     .chrome-link {
+          width: 346px;
+     }
+
+     .like-head,
+     .chart-head,
+     .chrome-head,
+     .chrome-para {
+          margin-left: 34px;
+     }
+
+     .cate-heading,
+     .chart-head {
+          text-align: center;
+     }
+
+     .boxes,
+     .apps {
+          display: grid;
+     }
+
+     .apps {
+          margin-left: 0px;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px;
+     }
+
+     .extention,
+     .chrome-boxes,
+     .boxes {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 16px;
+          margin-left: 32px;
+     }
+
+     .chart-heading {
+          text-align: center;
+     }
+
+     .chart-none {
+          display: none;
+     }
+
+     .chart-bx {
+          flex-direction: column;
+     }
+
+     .chart-img-bx {
+          background-color: transparent;
+     }
+
+     .img-radius-content {
+          align-items: center;
+     }
+
+     .link-charts {
+          display: flex;
+          justify-content: center;
+          margin-right: 0;
+     }
+
+     .editor-para {
+          margin: 8px 0 6px;
+     }
+
+     .cta-btn {
+          font-weight: 500;
+     }
+
+     .browser-para {
+          margin-left: 32px;
      }
 }
 

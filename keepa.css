@@ -1152,6 +1152,40 @@
 
 /* Responsive */
 
+@media (max-width: 1024px) {
+     .carousel {
+          width: 65%;
+     }
+
+     .overview,
+     .related,
+     .detail,
+     .review,
+     .privacy,
+     .support,
+     .keepa-main-header,
+     .keepa-swiper {
+          margin-left: 32px;
+     }
+}
+
+@media (max-width: 768px) {
+
+     .nav-items {
+          justify-content: normal;
+          gap: 18px;
+     }
+
+     .related {
+          display: none;
+     }
+
+     .overview-paragraphs.expanded {
+          max-height: 1006px;
+          mask: none;
+     }
+}
+
 @media (max-width: 430px) {
 
      .main {

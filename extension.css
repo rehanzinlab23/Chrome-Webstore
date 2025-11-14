@@ -445,6 +445,146 @@ body {
 
 /* Responsive */
 
+@media (max-width: 1024px) {
+
+     .nav-items {
+          justify-content: space-between;
+          gap: 18px;
+     }
+
+     .main,
+     .grid {
+          width: 100% !important;
+     }
+
+     .grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+     }
+
+     .navbar {
+          z-index: 2;
+     }
+
+     .sec {
+          display: none;
+          padding-left: 12px;
+          margin-top: -64px;
+     }
+
+     .search-icon {
+          margin-left: 180px;
+     }
+
+     .exts {
+          min-width: 0 !important;
+          margin-left: 32px;
+     }
+
+     #backToTop {
+          display: none;
+     }
+
+     .btn-flex {
+          gap: 0px;
+     }
+
+     .grid-heading {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .grid-heading-content {
+          text-align: center;
+     }
+
+     .keepa {
+          width: 332px;
+          max-width: 100%;
+     }
+
+     .seperator {
+          margin: 20px -70px;
+     }
+
+     .flex {
+          display: block;
+     }
+
+     .footer-ul {
+          margin-top: 24px;
+     }
+}
+
+@media (max-width: 768px) {
+
+     .nav-items {
+          justify-content: normal;
+          gap: 18px;
+     }
+
+     .main,
+     .grid {
+          width: 100% !important;
+     }
+
+     .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+     }
+
+     .navbar {
+          z-index: 2;
+     }
+
+     .sec {
+          display: none;
+          padding-left: 12px;
+          margin-top: -64px;
+     }
+
+     .search-icon {
+          margin-left: 180px;
+     }
+
+     .exts {
+          min-width: 0 !important;
+          margin-left: 32px;
+     }
+
+     #backToTop {
+          display: none;
+     }
+
+     .btn-flex {
+          gap: 0px;
+     }
+
+     .grid-heading {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .grid-heading-content {
+          text-align: center;
+     }
+
+     .keepa {
+          width: 332px;
+          max-width: 100%;
+     }
+
+     .seperator {
+          margin: 20px -70px;
+     }
+
+     .flex {
+          display: block;
+     }
+
+     .footer-ul {
+          margin-top: 24px;
+     }
+}
+
 @media (max-width: 430px) {
 
      .main,

@@ -1647,6 +1647,7 @@ body {
      }
 
      .boxes {
+          display: flex !important;
           flex-direction: column;
           gap: 12px;
           margin-left: 32px;
@@ -1676,7 +1677,9 @@ body {
      }
 
      .apps {
-          flex-direction: column;
+          margin-left: 0px !important;
+          grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+          gap: 16px !important;
      }
 
      .chart-heading {
@@ -1734,11 +1737,7 @@ body {
      }
 
      .footer-ul {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 12px;
-          margin-top: 24px;
+          margin-top: 12px;
      }
 
      .footer-li:not(:last-child)::after {
@@ -1775,6 +1774,7 @@ body {
      }
 
      .boxes {
+          display: flex !important;
           flex-direction: column;
           gap: 12px;
           margin-left: 32px;
@@ -1804,7 +1804,9 @@ body {
      }
 
      .apps {
-          flex-direction: column;
+          margin-left: 0px !important;
+          grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+          gap: 16px !important;
      }
 
      .chart-heading {
@@ -1862,10 +1864,6 @@ body {
      }
 
      .footer-ul {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 12px;
           margin-top: 12px;
      }
 

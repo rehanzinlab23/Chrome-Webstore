@@ -1366,4 +1366,8 @@
      .related {
           display: none;
      }
+
+     .footer-ul {
+          margin-top: 24px;
+     }
 }

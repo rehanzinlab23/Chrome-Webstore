@@ -833,9 +833,11 @@ body {
 
 .link {
      margin-left: auto;
+     text-decoration: none;
 }
 
 .like-link {
+     text-decoration: none;
      cursor: pointer;
      position: relative;
      text-align: center;

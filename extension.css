@@ -35,7 +35,7 @@ body {
      position: absolute;
      top: 19%;
      left: 0%;
-     font-size: 24px;
+     font-size: 21px;
      cursor: pointer;
      display: none;
 }
@@ -573,7 +573,7 @@ body {
 
      .hamburger {
           top: 16%;
-          left: 4%;
+          left: 80%;
      }
 
      .hamburger,

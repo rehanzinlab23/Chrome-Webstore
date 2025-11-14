@@ -461,118 +461,7 @@ body {
      }
 
      .hamburger {
-          top: 14%;
-          left: 2%;
-     }
-
-     .hamburger,
-     .cancel-btn {
-          display: block;
-     }
-
-     .left {
-          position: fixed;
-          top: 0;
-          left: -260px;
-          height: 100vh;
-          width: 256px;
-          background-color: #fff;
-          box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-          z-index: 1000;
-          transition: left 0.4s ease;
-          padding-top: 60px;
-          overflow-y: auto;
-          display: block !important;
-     }
-
-     .left.left-active {
-          left: 0;
-     }
-
-     .overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.3);
-          z-index: 900;
-          opacity: 0;
-          pointer-events: none;
-          transition: opacity 0.4s ease;
-     }
-
-     .overlay.show {
-          opacity: 1;
-          pointer-events: auto;
-     }
-
-     .sec {
-          display: none;
-          padding-left: 12px;
-          margin-top: -64px;
-     }
-
-     .search-icon {
-          margin-left: 180px;
-     }
-
-     .exts {
-          min-width: 0 !important;
-     }
-
-     #backToTop {
-          display: none;
-     }
-
-     .btn-flex {
-          gap: 0px;
-     }
-
-     .grid-heading {
-          display: flex;
-          flex-direction: column;
-     }
-
-     .grid-heading-content {
-          text-align: center;
-     }
-
-     .keepa {
-          width: 332px;
-          max-width: 100%;
-     }
-
-     .seperator {
-          margin: 20px -70px;
-     }
-
-     .flex {
-          display: block;
-     }
-
-     .footer-ul {
-          margin-top: 24px;
-     }
-}
-
-@media (max-width: 400px) {
-
-     .main,
-     .grid {
-          width: 100% !important;
-     }
-
-     .grid {
-          grid-template-columns: repeat(1, minmax(0, 1fr));
-     }
-
-     .navbar {
-          z-index: 2;
-     }
-
-     .hamburger {
-          top: 16%;
+          top: 24%;
           left: 80%;
      }
 
@@ -664,6 +553,118 @@ body {
      }
 
      .footer-ul {
-          margin-top: 12px;
+          margin-top: 24px;
+     }
+}
+
+@media (max-width: 400px) {
+
+     .main,
+     .grid {
+          width: 100% !important;
+     }
+
+     .grid {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+     }
+
+     .navbar {
+          z-index: 2;
+     }
+
+     .hamburger {
+          top: 24%;
+          left: 80%;
+     }
+
+     .hamburger,
+     .cancel-btn {
+          display: block;
+     }
+
+     .left {
+          position: fixed;
+          top: 0;
+          left: -260px;
+          height: 100vh;
+          width: 256px;
+          background-color: #fff;
+          box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
+          transition: left 0.4s ease;
+          padding-top: 60px;
+          overflow-y: auto;
+          display: block !important;
+     }
+
+     .left.left-active {
+          left: 0;
+     }
+
+     .overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.3);
+          z-index: 900;
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.4s ease;
+     }
+
+     .overlay.show {
+          opacity: 1;
+          pointer-events: auto;
+     }
+
+     .sec {
+          display: none;
+          padding-left: 12px;
+          margin-top: -64px;
+     }
+
+     .search-icon {
+          margin-left: 150px;
+     }
+
+     .exts {
+          min-width: 0 !important;
+          margin-left: 32px;
+     }
+
+     #backToTop {
+          display: none;
+     }
+
+     .btn-flex {
+          gap: 0px;
+     }
+
+     .grid-heading {
+          display: flex;
+          flex-direction: column;
+     }
+
+     .grid-heading-content {
+          text-align: center;
+     }
+
+     .keepa {
+          width: 332px;
+          max-width: 100%;
+     }
+
+     .seperator {
+          margin: 20px -70px;
+     }
+
+     .flex {
+          display: block;
+     }
+
+     .footer-ul {
+          margin-top: 24px;
      }
 }

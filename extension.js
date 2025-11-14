@@ -119,11 +119,6 @@ hamburger.addEventListener('click', () => {
      sec.style.display = 'flex';
 });
 
-overlay.addEventListener('click', () => {
-     leftBox.classList.remove('left-active');
-     overlay.classList.remove('show');
-});
-
 cancelBtn.addEventListener('click', () => {
 leftBox.classList.remove('left-active');
      overlay.classList.remove('show');

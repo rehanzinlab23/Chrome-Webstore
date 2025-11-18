@@ -308,6 +308,7 @@ body {
 
 /* Keepa */
 
+
 .keepa {
      background-color: #f0f4f9;
      border-radius: 20px;
@@ -316,6 +317,7 @@ body {
      flex-direction: column;
      max-width: 252px;
      position: relative;
+     cursor: pointer;
 }
 
 .keepa::before {
@@ -335,11 +337,8 @@ body {
 }
 
 .keepa-link {
-     border-radius: 20px;
-     height: 100%;
-     outline: none;
-     position: absolute;
-     width: 100%;
+     text-decoration: none;
+     color: inherit;
 }
 
 .keepa-content {
@@ -385,6 +384,12 @@ body {
      min-height: 2.5rem;
 }
 
+.card-rating {
+     padding-top: 4px;
+     display: flex;
+     gap: 8px;
+}
+
 /* Load More */
 
 .load-more {
@@ -404,9 +409,7 @@ body {
      background-color: #f5f6ff;
 }
 
-#grid {
-     display: none;
-}
+
 
 /* On top */
 

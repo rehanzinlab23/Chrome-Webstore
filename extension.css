@@ -399,7 +399,7 @@ body {
      padding: 10px 24px;
      border-radius: 999px;
      font-size: 14px;
-     font-weight: 500;
+     font-weight: 700 !important;
      cursor: pointer;
      transition: background 0.2s, box-shadow 0.2s;
      margin-top: 32px;
@@ -408,8 +408,6 @@ body {
 .load-more:hover {
      background-color: #f5f6ff;
 }
-
-
 
 /* On top */
 

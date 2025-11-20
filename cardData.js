@@ -963,36 +963,44 @@ const cards = [
 
 const container = document.getElementById("grid");
 const loadMoreBtn = document.getElementById("loadMore");
-console.log(container)
+
 let currentIndex = 0;
 const cardsPerLoad = 32;
+
+function createCardElement(card) {
+    const cardElement = document.createElement("div");
+    cardElement.className = "card";
+
+    cardElement.innerHTML = `
+        <a href="${card.link}" class="keepa-link">
+            <div class="keepa">
+                <div class="keepa-content">
+                    <img src="${card.image}" alt="${card.title}" class="keepa-img" />
+                    <h3 class="keepa-para">${card.title}</h3>
+                    <p class="card-rating">
+                        ${card.rating}
+                        <img src="${card.starImg}" alt="star" height="16" width="16"/>
+                        <img src="${card.infoImg}" alt="Info" height="16" width="16"/>
+                    </p>
+                    <p class="keepa-lines">${card.description}</p>
+                </div>
+            </div>
+        </a>
+        `;
+
+    return cardElement;
+}
+
+function createCardsUI(cards) {
+    return cards.map(card => createCardElement(card));
+}
 
 function showCards() {
     const nextIndex = currentIndex + cardsPerLoad;
     const cardsToShow = cards.slice(currentIndex, nextIndex);
 
-    cardsToShow.forEach(card => {
-        const cardElement = document.createElement("div");
-        cardElement.className = "card";
-
-        cardElement.innerHTML = `
-        <a href="${card.link}" class="keepa-link">
-     <div class="keepa">
-            <div class="keepa-content">
-                <img src="${card.image}" alt="${card.title}" class="keepa-img" />
-                <h3 class="keepa-para">${card.title}</h3>
-           <p class="card-rating">
-    ${card.rating}
-    <img src="${card.starImg}" alt="star" height="16" width="16"/>
-    <img src="${card.infoImg}" alt="Info" height="16" width="16"/>
-           </p>
-                <p class="keepa-lines">${card.description}</p>
-            </div>
-                </div>
-    </a>
-        `;
-        container.appendChild(cardElement);
-    });
+    const cardElements = createCardsUI(cardsToShow);
+    cardElements.forEach(cardElement => container.appendChild(cardElement));
 
     currentIndex += cardsPerLoad;
     if (currentIndex >= cards.length) {
@@ -1000,6 +1008,27 @@ function showCards() {
     }
 }
 
-showCards();
+function init() {
+    if (!container) {
+        console.log("Container element not found.");
+        return;
+    }
 
-loadMoreBtn.addEventListener("click", showCards);
+    showCards();
+
+    if (!loadMoreBtn) {
+        console.log("Load More button not found.");
+        return;
+    }
+
+    loadMoreBtn.addEventListener('click', () => {
+        loadMoreBtn.innerText = 'Loading...';
+
+        setTimeout(() => {
+            showCards();
+            loadMoreBtn.innerText = 'Load more';
+        }, 3000);
+    });
+}
+
+init();
